@@ -10,11 +10,11 @@ on:
   workflow_dispatch:
 
 
- jobs:
-   hello:
+jobs:
+  hello:
      runs-on : ubunto-latest
      stesps:
-       -uses : actions/checkout@v2
+       - uses : actions/checkout@v2
        - name : hello_world
          run echo "hello world"
          shell : bash
