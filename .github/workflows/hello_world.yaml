@@ -20,7 +20,7 @@ jobs:
         shell: bash
 
   goodbye:
-    runs_on: ubunto-latest
+    runs-on: ubunto-latest
     steps:
       - name: goodbye World
         run: echo "Goodbye world" 
