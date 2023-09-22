@@ -1,28 +1,28 @@
-name : hello world workflow
+name: hello world workflow
 
 on:
-  push: 
-      branches:
-        -main
+   push:
+       branches:
+          - main
   pull_resquest:
-    branches:
-      -main
+       branches:
+          - main
   workflow_dispatch:
 
 
 jobs:
   hello:
-     runs-on : ubunto-latest
+     runs-on: ubunto-latest
      stesps:
-       - uses : actions/checkout@v2
-       - name : hello_world
-         run echo "hello world"
-         shell : bash
+       - uses: actions/checkout@v2
+       - name: hello_world
+         run: echo "hello world"
+         shell: bash
 
-    goodbye :
-      runs_on : ubunto-latest
-      steps :
-        - name : "goodbye World"
-          shell : bash
+    goodbye:
+      runs_on: ubunto-latest
+      steps:
+        - name: "goodbye World"
+          shell: bash
 
           
